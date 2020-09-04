@@ -75,7 +75,7 @@ export function DropdownOption({name, content: Content, backgroundHeight}){
     return (
     <motion.button 
     className="dropdown-option" 
-    // ref={optionHook}
+    ref={optionHook}
     onMouseDown={handleClick}
     onHoverStart={() => !window.isMobile && handleOpen()}
     onHoverEnd={() => !window.isMobile && handleOpen()}

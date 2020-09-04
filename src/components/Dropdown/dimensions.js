@@ -12,7 +12,7 @@ export function useDimensions(responsive = true){
     useLayoutEffect(() => {
         if(element){
             const updateDimensions = () => {
-                window.requestAnimationFrame(() =>{
+                window.requestAnimationFrame(() => {
                     setDimensions(getDimensions(element));
                 });
             };
