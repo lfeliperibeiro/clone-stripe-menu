@@ -2,10 +2,11 @@ import React from 'react';
 
 import {Products, Developers, Company} from '../../Content';
 import {Container, DropdownStyles} from './styles';
-import {DropdownOption} from '../Dropdown';
+import {DropdownProvider ,DropdownOption} from '../Dropdown';
 
 function Navbar() {
     return (
+        <DropdownProvider>            
         <DropdownStyles>      
         <Container>
             <ul>
@@ -30,6 +31,8 @@ function Navbar() {
             </ul>
         </Container>
         </DropdownStyles>
+        </DropdownProvider>
+
 
     )
 };
